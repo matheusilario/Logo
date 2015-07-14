@@ -6,10 +6,9 @@ body {
 }
 
 .content {
- 
+   font-family: 'Montserrat', sans-serif;
   font-size:36px;
   line-height:40px;
-  font-family: 'Montserrat', sans-serif;
   color:#ecf0f1;
   height:40px;
   position:absolute;
@@ -19,28 +18,29 @@ body {
   margin-left:-118px;
   
   &:before {
-    color:#16a085;
-    content:'#';
-    position:absolute;
+    content:'<';
     left:-30px;
-    line-height:40px;
   }
   &:after {
-    content:'_';
-    position:absolute;
+    content:'/>';
     right:-30px;
-    line-height:40px;
-    animation:2s linear 0s normal none infinite opacity;
-    -webkit-animation:2s ease-out 0s normal none infinite opacity;
-    -moz-animation:2s ease-out 0s normal none infinite opacity;
-    -o-animation:2s ease-out 0s normal none infinite opacity;
   }
   &:after, &:before {
+    color:#16a085;
     font-size:42px;
+    line-height:40px;
+    position:absolute;
   }
 }
 
-
+span {
+  display:inline;
+  float:left;
+  animation:2s linear 0s normal none infinite opacity;
+  -webkit-animation:2s ease-out 0s normal none infinite opacity;
+  -moz-animation:2s ease-out 0s normal none infinite opacity;
+  -o-animation:2s ease-out 0s normal none infinite opacity;
+}
 
 p {
   display:inline;
